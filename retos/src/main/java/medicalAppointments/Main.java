@@ -1,6 +1,8 @@
 package medicalAppointments;
 
-import static medicalAppointments.ui.UIMenu.*;
+import java.util.Date;
+
+//import static medicalAppointments.ui.UIMenu.*;
 
 public class Main {
 	
@@ -8,41 +10,27 @@ public class Main {
 		
 		//showMenu();
 		
-		Doctor myDoctor = new Doctor("Joel Guzman", "Pediatria");
-		System.out.println(myDoctor.name);
-		System.out.println(myDoctor.speciality);
+		Doctor myDoctor = new Doctor("Joel Guzman", "joel-guzman@hotmail.com");
 		
+		myDoctor.addAvailableAppointment(new Date(), "4pm");
+		myDoctor.addAvailableAppointment(new Date(), "10am");
+		myDoctor.addAvailableAppointment(new Date(), "1pm");
 		
-		int i =0;
-		int b = 2;
-		b = i; // b=0
+		System.out.println(myDoctor);
 		
-		String name = "Joel";
+		/*
+		for (Doctor.AvailableAppointment aA : myDoctor.getAvailableAppointments() ) {
+			
+			System.out.println(aA.getDate() + " " + aA.getTime());
+		}*/
 		
 		System.out.println();
 		System.out.println();
 		Patient patient = new Patient("Alejandra", "alejandra@mail.com");
-		Patient patient2 = new Patient("Joel", "joel@mail.com");
 		
-		System.out.println(patient.getName());
-		System.out.println(patient2.getName());
-		patient2 = patient;
-		
-		System.out.println(patient.getName());
-		System.out.println(patient2.getName());
-		
-		patient2.setName("Manuel");
-		
-		System.out.println(patient.getName());
-		System.out.println(patient2.getName());
+		System.out.println(patient);
 		
 		
-		/*patient.setWeight(54.6);
-		System.out.println(patient.getWeight());
-		
-		patient.setPhoneNumber("12345678");
-		System.out.println(patient.getPhoneNumber());
-		*/
 	}
 	
 
