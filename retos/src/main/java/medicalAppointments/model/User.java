@@ -1,6 +1,6 @@
-package medicalAppointments;
+package medicalAppointments.model;
 
-public class User {
+public abstract class User {
 	
 	private int id;
 	private String name;
@@ -76,6 +76,8 @@ public class User {
 		return "User [name=" + name + ", email=" + email + ", address=" + address + ", phoneNumber=" + phoneNumber
 				+ "]";
 	}
+	
+	public abstract void showDataUser();
 	
 	
 }

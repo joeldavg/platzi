@@ -1,4 +1,4 @@
-package medicalAppointments;
+package medicalAppointments.model;
 
 public class Patient extends User {
 	
@@ -52,6 +52,13 @@ public class Patient extends User {
 	public String toString() {
 		return super.toString() + " Patient [birthday=" + birthday + ", blood=" + blood + ", getWeight()=" + getWeight() + ", getHeight()="
 				+ getHeight() + "]";
+	}
+
+
+	@Override
+	public void showDataUser() {
+		System.out.println("Paciente");
+		System.out.println("Historial completo desde nacimiento");
 	}
 	
 	
