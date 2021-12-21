@@ -12,7 +12,7 @@ public class UIPatientMenu {
 	public static void showPatientMenu() {
 		int response = 0;
 		do {
-			System.out.println(\n\n);
+			System.out.println("\n\n");
 			System.out.println("Patient");
 			System.out.println("Welcome: " + UIMenu.patinetLogged);
 			
