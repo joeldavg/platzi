@@ -7,5 +7,7 @@
   <name>curso java orientado a objectos platzi</name>
   <modules>
   	<module>retos</module>
+  	<module>mensajes-app</module>
+  	<module>gatos-app</module>
   </modules>
 </project>
