@@ -9,5 +9,7 @@
   	<module>retos</module>
   	<module>mensajes-app</module>
   	<module>gatos-app</module>
+  	<module>java-tests</module>
+  	<module>medical-appointment</module>
   </modules>
 </project>
