@@ -10,6 +10,7 @@ public class MensajesDao {
 	
 	
 	public static void crearMensajeDB(Mensajes mensaje) {
+		
 		Conexion db_connect = new Conexion();
 		
 		try( Connection conexion = db_connect.getConnection() ) {

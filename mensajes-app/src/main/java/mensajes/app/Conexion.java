@@ -11,7 +11,7 @@ public class Conexion {
 		
 		String user = "root";
 		String password = "root";
-		String driver = "com.mysql.cj.jdbc.Driver";
+		//String driver = "com.mysql.cj.jdbc.Driver";
 		String url = "jdbc:mysql://localhost:3306/mensajes_app";
 		
 		Connection conection = null;

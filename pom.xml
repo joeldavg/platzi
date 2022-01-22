@@ -6,10 +6,16 @@
   <packaging>pom</packaging>
   <name>curso java orientado a objectos platzi</name>
   <modules>
-  	<module>retos</module>
   	<module>mensajes-app</module>
   	<module>gatos-app</module>
   	<module>java-tests</module>
   	<module>medical-appointment</module>
+  	<module>amazon-viewer</module>
+  	<module>make-report</module>
   </modules>
+  <properties>
+	 <maven.compiler.target>11</maven.compiler.target>
+ 	 <maven.compiler.source>11</maven.compiler.source>
+  </properties>
+  
 </project>
