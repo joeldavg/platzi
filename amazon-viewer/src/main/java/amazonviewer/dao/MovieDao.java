@@ -14,14 +14,13 @@ public interface MovieDao extends IDBConnection {
 	
 	default Movie setMovieViewed(Movie movie) {
 		
-		
 		return movie;
 	}
 	
 	default ArrayList<Movie> read() {
 		ArrayList<Movie> movies = new ArrayList<Movie>();
+		
 		try (Connection connection = connectToDB()) {
-			
 			String sql = "SELECT * FROM " + TMOVIE;
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			ResultSet rs = preparedStatement.executeQuery();
@@ -42,6 +41,7 @@ public interface MovieDao extends IDBConnection {
 	}
 	
 	private boolean getMovieViewed() {
+		boolean viewed = false;
 		return false;
 	}
 	
