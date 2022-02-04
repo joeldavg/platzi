@@ -12,6 +12,7 @@
   	<module>medical-appointment</module>
   	<module>amazon-viewer</module>
   	<module>make-report</module>
+  	<module>job-search</module>
   </modules>
   <properties>
 	 <maven.compiler.target>11</maven.compiler.target>
